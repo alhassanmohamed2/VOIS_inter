@@ -1,0 +1,11 @@
+1- Launch ACME System1 using the link https://acme-test.uipath.com
+2- Login with credentials username:robotics@vois.com, Password:12345678
+3- Use the input file "VendorInvoicesData.xlsx" and at the "Vendors" sheet create a new Column with the Name "Total Invoices"
+4- Extract Vendors from the "Vendors" sheet and upload them to the robot queue.
+5- For each Vendor:
+	a- Go to the "Internal Invoices" Tab 
+	b- Download all monthly invoices from Jan till Dec for each vendor by using Vendor Value.
+	c- fill the downloaded results into the "Vendor Invoices" sheet
+6-  Use the filled data to calculate the total invoices for each Vendor and add the value to "Total Invoices" at the "Vendors" sheet
+7- Save the output file and upload it to One Drive using API without using the Uipath One Drive library. 
+8- send the output file via email
